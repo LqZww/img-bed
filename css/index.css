@@ -1,0 +1,190 @@
+/* reset css */
+body,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* common css */
+
+/* 自定义属性 */
+:root {
+    --body-padding: 32px;
+    --bg-color: #333;
+    --theme-color: #00aa3a;
+}
+
+body {
+    font: 16px/1.67 Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* page css */
+header {
+    background: var(--bg-color);
+    display: flex;
+    padding: 10px var(--body-padding);
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 22px;
+}
+
+header a {
+    color: #fff;
+}
+
+header nav>a {
+    margin-left: 30px;
+    /* 变为大写 */
+    text-transform: uppercase;
+}
+
+header .setting {
+    /*让Setting靠右 */
+    margin-left: auto;
+    /* 让图标与文字垂直居中对齐 */
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+header .setting .icon-setting {
+    font-size: 20px;
+}
+
+main {
+    padding: 0 var(--body-padding);
+}
+
+main .ct-upload {
+    border: 1px dashed #666;
+    max-width: 700px;
+    padding: 30px 10px;
+    margin: 60px auto 0 auto;
+    color: #666;
+    text-align: center;
+    border-radius: 10px;
+}
+
+main .ct-upload .icon-cloud {
+    font-size: 80px;
+    line-height: 1;
+}
+
+main .ct-upload p {
+    line-height: 1;
+    margin: 10px 0 0 0;
+}
+
+main .ct-upload p:first-of-type {
+    font-size: 32px;
+}
+
+main .ct-loading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+main .ct-loading .view-all {
+    margin-left: auto;
+    color: var(--theme-color);
+}
+
+main .ct-loading li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+main .ct-loading .loading {
+    display: block;
+    width: 400px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+}
+
+main .ct-loading .loading i {
+    display: block;
+    height: 100%;
+    width: 45%;
+    background-color: var(--theme-color);
+    border-radius: 20px;
+}
+
+main .ct-loading .url {
+    color: #767676;
+}
+
+main .ct-loading .copy {
+    color: var(--theme-color);
+    /* 添加点击效果 */
+    cursor: pointer;
+}
+
+main .ct-pros {
+    margin-top: 50px;
+}
+
+main .ct-pros h2 {
+    font-size: 32px;
+    text-align: center;
+}
+
+main .ct-pros ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+main .ct-pros li {
+    flex: 1;
+    margin: 0 20px;
+}
+
+main .ct-pros [class^="icon-"] {
+    font-size: 60px;
+    color: var(--theme-color);
+}
+
+main .ct-pros h3 {
+    font-size: 30px;
+}
+
+main .ct-pros p {
+    text-align: left;
+    color: #767676;
+}
+
+footer {
+    background-color: var(--bg-color);
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #f2f2f2;
+}
